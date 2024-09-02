@@ -9,3 +9,8 @@ result = countNucFreq(DNAStr)
 print(f"{result['A']} {result['C']} {result['G']} {result['T']}")
 
 # better if it can directly read the file
+# other solutions:
+# print(*map(input().count, "ACGT"))
+
+# def qt(s):
+    #   return s.count("A"), s.count("G"), s.count("C"), s.count("T")
