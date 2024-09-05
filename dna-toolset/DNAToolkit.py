@@ -2,6 +2,7 @@ import collections # for shortcut of freq count
 
 # List of 4 nucleotides
 nucleotides = ["A", "C", "G", "T"] # Adenine, Cystosine, Guanine, Thymine
+DNA_ReverseComplement = {'A':'T', 'T':'A', 'G':'C', 'C':'G'}
 
 # Bioinformatics Functions
 
@@ -24,3 +25,7 @@ def countNucFreq(seq):
 # DNA to RNA Transcription
 def transcription(seq):
     return seq.replace("T", "U") # replace thymine with uracil
+
+# DNA Reverse Complement
+def reverse_complement(seq):
+    return ''.join([DNA_ReverseComplement[nuc] for nuc in seq])[::-1]
