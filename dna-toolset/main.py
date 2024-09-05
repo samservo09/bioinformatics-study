@@ -7,3 +7,6 @@ randDNAstr = ''.join([random.choice(nucleotides)
 
 DNAstr = validateDNAseq(randDNAstr)
 print(countNucFreq(DNAstr))
+
+def transcription(seq):
+    return seq.replace("T", "U") 

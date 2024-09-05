@@ -21,3 +21,6 @@ def countNucFreq(seq):
     # return tmpFreqDict
     return dict(collections.Counter(seq))
 
+# DNA to RNA Transcription
+def transcription(seq):
+    return seq.replace("T", "U") # replace thymine with uracil
