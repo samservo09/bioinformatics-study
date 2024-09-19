@@ -29,3 +29,7 @@ def transcription(seq):
 # DNA Reverse Complement
 def reverse_complement(seq):
     return ''.join([DNA_ReverseComplement[nuc] for nuc in seq])[::-1]
+
+# Count protein sequence
+def count_protein(seq):
+    return len(seq)
